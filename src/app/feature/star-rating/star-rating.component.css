@@ -1,0 +1,18 @@
+/*styling the rating section*/
+.star {
+  position: relative;
+  display: inline-block;
+  font-size: 2.5rem;
+  color: #c5bfbf;
+  margin-right: 2px;
+  height: 20px;
+}
+.full {
+  color: red;
+}
+.half {
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  color: red;
+}

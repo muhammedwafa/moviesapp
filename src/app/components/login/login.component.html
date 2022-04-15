@@ -1,0 +1,22 @@
+<div class="login-container">
+  <img class="film" src="assets/images/camera.png" alt="">
+  <div class="logo">Basio Movies</div>
+  <div class="desc">
+    <p>this is a simple website that displays the best movies that we never watched, simply because i do not
+      watch movies. </p>
+  </div>
+  <div class="login-form">
+    <div class="form-group">
+      <label for="uname">User Name</label>
+      <input type="text" id="uname" class="form-control" [(ngModel)]="userName">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" class="form-control" [(ngModel)]="password">
+    </div>
+    <div class="btn-container form-group" >
+      <button  type="submit" class="btn btn-dark login-btn" (click)="login()">login</button>
+      <div class="error">{{errorMessage}}</div>
+    </div>
+  </div>
+</div>

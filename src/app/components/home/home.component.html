@@ -1,0 +1,62 @@
+<app-header></app-header>
+<div class="home-container">
+  <div class="all-movies">
+    <div class="trending-movies">
+      <div class="top">
+        <h4>trending movies</h4>
+        <div class="view-all">view all</div>
+      </div>
+    </div>
+    <div class="movie-thumpNial">
+      <div class="movie" *ngFor="let movie of trendingMovies">
+        <div class="cover" (click)="gotoMovie('trending', movie.id)">
+          <img [src]="movie.cover" alt="">
+        </div>
+        <div class="details">
+          <div class="name">{{movie.name}}</div>
+          <div class="rating">
+            <app-star-rating [rating]="movie.rating" [isReadOnly]="true"></app-star-rating>
+            <span class="rating-value">{{movie.rating}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="trending-movies">
+      <div class="top">
+        <h4>popular in theater</h4>
+        <div class="view-all">view all</div>
+      </div>
+    </div>
+    <div class="movie-thumpNial">
+      <div class="movie" *ngFor="let movie of popularInTheater">
+        <div class="cover" (click)="gotoMovie('theater',movie.id)">
+          <img [src]="movie.cover" alt="">
+        </div>
+        <div class="details">
+          <div class="name">{{movie.name}}</div>
+          <div class="rating">
+            <app-star-rating [rating]="movie.rating" [isReadOnly]="true"></app-star-rating>
+            <span class="rating-value">{{movie.rating}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="popular-movies">
+    <div class="top">
+      <h4>all time popular</h4>
+    </div>
+    <div class="movies">
+      <div class="movie" *ngFor="let movie of popularMovies">
+        <div class="name" (click)="gotoMovie('popular',movie.id)">
+          {{movie.name}}
+        </div>
+        <div class="rating" (click)="gotoMovie('popular', movie.id)">
+          <app-star-rating [rating]="movie.rating" [isReadOnly]="true"></app-star-rating>
+          <span class="rating-value">{{movie.rating}}</span>
+        </div>
+      </div>
+      <div class="view-all">view all</div>
+    </div>
+  </div>
+</div>

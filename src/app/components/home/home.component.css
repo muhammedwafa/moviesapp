@@ -1,0 +1,108 @@
+.home-container {
+  display: flex;
+}
+
+.all-movies {
+  width: 75%;
+  height: calc(100vh - 80px);
+  border-right: 1px solid #e2aa02;
+  padding-inline: 20px 40px;
+  font-family: "Roboto", sans-serif;
+}
+
+.popular-movies {
+  width: 25%;
+  height: calc(100vh - 80px);
+  padding: 20px 40px;
+  font-family: "Roboto", sans-serif;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.top h4 {
+  text-transform: capitalize;
+  font-weight: bold;
+  border-left: 5px solid #ff9900;
+  padding-left: 10px;
+
+}
+
+.top .view-all {
+  color: #ff9900;
+  cursor: pointer;
+}
+
+.movie-thumpNial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.movie .cover img {
+  border-radius: 10px;
+  height: 200px;
+  width: 190px;
+  box-shadow: 5px 5px 20px #383832;
+
+}
+
+.details {
+  width: 180px;
+
+}
+
+.details .name {
+  font-weight: bold;
+  height: 20px;
+  margin-top: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+.details .name :hover {
+  white-space: nowrap;
+}
+
+.rating {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+}
+
+.rating-value {
+  position: absolute;
+  top: 15px;
+  right: -40px;
+  font-weight: bold;
+}
+
+
+.movies {
+  position: relative;
+  left: -20px;
+
+}
+
+.movies .movie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movies .view-all {
+  color: #ff9900;
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+  cursor: pointer;
+  text-align: right;
+}
