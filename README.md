@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Application layout
+
+main login in page
+---------------------
+!['login page'](src/assets/images/readme/login.PNG)
+
+Application Home page
+---------------------
+!['home page'](src/assets/images/readme/home.PNG)
+
+
+Application Movie details page:
+------------------------------
+!['movie details page'](src/assets/images/readme/moviedetails.PNG)
